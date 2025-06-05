@@ -52,6 +52,7 @@
   },
   "homepage": "https://tophackr.com/tmaui/",
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "peerDependencies": {
