@@ -1,6 +1,6 @@
 {
   "name": "tmaui",
-  "version": "2.1.10",
+  "version": "2.1.11",
   "description": "World-class, ultimate UI developer toolkit.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/index.js",
