@@ -28,14 +28,14 @@
 }
 
 .wrapper--ios.wrapper--disabled {
-  opacity: .35;
+  opacity: 0.35;
 }
 
 .wrapper--base.wrapper--disabled::after {
   content: '';
   position: absolute;
   inset: 0;
-  opacity: .5;
+  opacity: 0.5;
   background: var(--tgui--bg_color);
 }
 
@@ -52,7 +52,8 @@
 
 .wrapper--base .body {
   border-radius: 14px;
-  box-shadow: 0 0 0 2px var(--tgui--outline);
+  outline: 2px solid var(--tgui--divider);
+  outline-offset: -2px;
 }
 
 .wrapper--base.wrapper--error .title {
@@ -60,7 +61,7 @@
 }
 
 .wrapper--base.wrapper--error .body {
-  box-shadow: 0 0 0 2px var(--tgui--destructive_text_color);
+  outline-color: var(--tgui--destructive_text_color);
 }
 
 .wrapper--base.wrapper--focused .title {
@@ -68,7 +69,7 @@
 }
 
 .wrapper--base.wrapper--focused .body {
-  box-shadow: 0 0 0 2px var(--tgui--link_color);
+  outline-color: var(--tgui--link_color);
 }
 
 .wrapper--ios .body {
@@ -77,5 +78,6 @@
 }
 
 .wrapper--ios.wrapper--error .body {
-  box-shadow: 0 0 0 1.5px var(--tgui--destructive_text_color);
+  outline: 1.5px solid var(--tgui--destructive_text_color);
+  outline-offset: -1.5px;
 }
