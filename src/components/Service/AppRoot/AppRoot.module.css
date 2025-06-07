@@ -57,6 +57,10 @@
     #e53935
   );
   --tgui--divider: var(--tg-theme-section-separator-color, #efeff4);
+  --tgui--safe_area_inset_bottom: calc(
+    var(--tg-viewport-safe-area-inset-bottom, 0px) +
+      var(--tg-viewport-content-safe-area-inset-bottom)
+  );
   /** End of native tokens */
 
   /* Custom lib tokens */
