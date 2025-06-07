@@ -10,7 +10,7 @@ import { Text } from 'components/Typography/Text/Text';
 
 export interface InfoProps extends HTMLAttributes<HTMLDivElement> {
   /** Determines the type of content to display, affecting the layout and styling. */
-  type: 'text' | 'avatarStack';
+  type?: 'text' | 'avatarStack';
   /** Text content for the component, utilized when the `type` is set to 'text'. */
   subtitle?: string;
   /** An `AvatarStack` component to display when the `type` is 'avatarStack', showcasing multiple avatars. */
