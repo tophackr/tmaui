@@ -4,9 +4,6 @@
 }
 
 .wrapper--ios .body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5px;
   border-radius: 12px;
   background: var(--tgui--section_bg_color);
 }
@@ -21,4 +18,8 @@
 
 .wrapper--ios .body > :only-child {
   border-radius: 12px;
+}
+
+.body > *:not(:last-child) {
+  border-bottom: var(--tgui--border--width) solid var(--tgui--divider);
 }
