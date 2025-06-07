@@ -12,7 +12,7 @@
   flex-direction: column;
 
   outline: none;
-  background-color: var(--tgui--bg_color);
+  background-color: var(--tgui--secondary_bg_color);
   z-index: var(--tgui--z-index--overlay);
 }
 
