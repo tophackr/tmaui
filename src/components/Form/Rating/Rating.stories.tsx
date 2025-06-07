@@ -2,13 +2,20 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Icon28Heart } from 'icons/28/heart';
 import { hideControls } from 'storybook/controls';
 
-import { Section } from 'components';
+import { List, Section } from 'components';
 import { Rating } from './Rating';
 
 const meta = {
   title: 'Form/Rating',
   component: Rating,
   argTypes: hideControls('IconContainer'),
+  decorators: [
+    (Story) => (
+      <List style={{ width: 500 }}>
+        <Story />
+      </List>
+    ),
+  ],
 } satisfies Meta<typeof Rating>;
 
 export default meta;
