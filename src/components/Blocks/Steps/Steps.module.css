@@ -10,7 +10,7 @@
   width: 100%;
 
   border-radius: 2px;
-  background: var(--tgui--tertiary_bg_color);
+  background: var(--tgui--glass_bg);
 }
 
 .step--active {

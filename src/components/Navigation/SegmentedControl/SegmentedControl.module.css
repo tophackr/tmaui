@@ -8,7 +8,7 @@
   box-sizing: border-box;
 
   border-radius: 44px;
-  background: var(--tgui--tertiary_bg_color);
+  background-color: var(--tgui--glass_bg);
 }
 
 .body {
@@ -31,18 +31,18 @@
   border-radius: 40px;
   z-index: var(--tgui--z-index--simple);
   box-sizing: border-box;
-  background: var(--tgui--segmented_control_active_bg);
+  background-color: var(--tgui--glass_tint);
 }
 
 .wrapper--ios {
   border-radius: 9px;
-  background: var(--tgui--tertiary_bg_color);
+  background-color: var(--tgui--glass_bg);
 }
 
 .wrapper--ios .slider {
-  border: var(--tgui--border--width) solid rgba(0, 0, 0, .04);
+  border: var(--tgui--border--width) solid rgba(0, 0, 0, 0.04);
   border-radius: inherit;
   box-shadow:
-      0 3px 1px 0 rgba(0, 0, 0, .04),
-      0 3px 8px 0 rgba(0, 0, 0, .12);
+    0 3px 1px 0 rgba(0, 0, 0, 0.04),
+    0 3px 8px 0 rgba(0, 0, 0, 0.12);
 }

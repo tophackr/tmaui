@@ -21,7 +21,7 @@
 
 .wrapper--disabled {
   cursor: default;
-  opacity: .35;
+  opacity: 0.35;
 }
 
 .track,
@@ -41,7 +41,8 @@
 
   box-sizing: border-box;
   inline-size: 100%;
-  background-color: var(--tgui--tertiary_bg_color);
+  background: var(--tgui--glass_bg);
+  background-blend-mode: lighten;
 }
 
 .trackFilled {

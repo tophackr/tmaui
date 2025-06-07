@@ -5,7 +5,7 @@
 }
 
 .wrapper--disabled {
-  opacity: .35;
+  opacity: 0.35;
 }
 
 .button {
@@ -27,12 +27,12 @@
 
 .button--selected {
   color: var(--textColor);
-  background: var(--tgui--tertiary_bg_color);
+  background: var(--tgui--glass_bg);
 }
 
 .button--disabled {
   cursor: default;
-  opacity: .35;
+  opacity: 0.35;
 }
 
 .button--ellipsis {

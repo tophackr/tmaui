@@ -3,7 +3,7 @@
   justify-items: stretch;
 
   box-shadow: 0 -1px 0 var(--tgui--divider);
-  background: var(--tgui--surface_primary);
+  background: var(--tgui--secondary_bg_color);
   padding: 0 16px;
 }
 

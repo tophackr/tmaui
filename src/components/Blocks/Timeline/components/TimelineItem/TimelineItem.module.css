@@ -25,7 +25,8 @@
   height: var(--tgui--timeline--item--size);
 
   border-radius: 50%;
-  background: var(--tgui--quartenary_bg_color);
+  background: var(--tgui--glass_bg);
+  backdrop-filter: blur(10px);
 }
 
 .line {
@@ -40,7 +41,7 @@
 
   border-radius: 2px;
   transform: translateX(-50%);
-  background: var(--tgui--quartenary_bg_color);
+  background: var(--tgui--glass_bg);
 }
 
 .fields {

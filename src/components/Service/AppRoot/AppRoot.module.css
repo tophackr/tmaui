@@ -66,18 +66,11 @@
   /* Custom lib tokens */
   --tgui--skeleton: rgba(255, 255, 255, 0.03);
   --tgui--outline: rgba(0, 0, 0, 0.05);
-  --tgui--surface_primary: rgba(255, 255, 255, 0.95);
-  --tgui--tertiary_bg_color: #f4f4f7;
-  --tgui--quartenary_bg_color: #f6f6fa;
-  --tgui--segmented_control_active_bg: #ffffff;
-  --tgui--card_bg_color: #ffffff;
+  --tgui--brightness_filter: 0.96;
+  --tgui--glass_bg: rgba(0, 0, 0, 0.05);
+  --tgui--glass_tint: rgba(99, 99, 102, 0.06);
   --tgui--secondary_hint_color: #a2acb0;
   --tgui--secondary_fill: rgba(67, 120, 255, 0.1);
-  --tgui--green: #31d158;
-  --tgui--destructive_background: #e53935;
-  --tgui--primary_code_highlight: #4378ff;
-  --tgui--secondary_code_highlight: #b00fb4;
-  --tgui--tertiary_code_highlight: #3a9f20;
   --tgui--plain_background: rgba(0, 0, 0, 0.04);
   --tgui--plain_foreground: rgba(0, 0, 0, 0.8);
   --tgui--toast_accent_color: #55a6ff;
@@ -114,44 +107,36 @@
 
 .wrapper--dark {
   /* Native tokens */
-  --tgui--bg_color: var(--tg-theme-bg-color, #212121);
+  --tgui--bg_color: var(--tg-theme-bg-color, #18222d);
   --tgui--text_color: var(--tg-theme-text-color, #ffffff);
-  --tgui--hint_color: var(--tg-theme-hint-color, #aaaaaa);
-  --tgui--link_color: var(--tg-theme-link-color, #2990ff);
-  --tgui--button_color: var(--tg-theme-button-color, #2990ff);
+  --tgui--hint_color: var(--tg-theme-hint-color, #b1c3d5);
+  --tgui--link_color: var(--tg-theme-link-color, #62bcf9);
+  --tgui--button_color: var(--tg-theme-button-color, #2ea6ff);
   --tgui--button_text_color: var(--tg-theme-button-text-color, #ffffff);
-  --tgui--secondary_bg_color: var(--tg-theme-secondary-bg-color, #0f0f0f);
+  --tgui--secondary_bg_color: var(--tg-theme-secondary-bg-color, #131415);
   --tgui--header_bg_color: var(--tg-theme-header-bg-color, #212121);
-  --tgui--accent_text_color: var(--tg-theme-accent-text-color, #007aff);
-  --tgui--section_bg_color: var(--tg-theme-section-bg-color, #212121);
+  --tgui--accent_text_color: var(--tg-theme-accent-text-color, #2ea6ff);
+  --tgui--section_bg_color: var(--tg-theme-section-bg-color, #18222d);
   --tgui--section_header_text_color: var(
     --tg-theme-section-header-text-color,
-    #aaaaaa
+    #b1c3d5
   );
-  --tgui--subtitle_text_color: var(--tg-theme-subtitle-text-color, #aaaaaa);
+  --tgui--subtitle_text_color: var(--tg-theme-subtitle-text-color, #b1c3d5);
   --tgui--destructive_text_color: var(
     --tg-theme-destructive-text-color,
-    #e53935
+    #ef5b5b
   );
-  --tgui--divider: var(--tg-theme-section-separator-color, #0f0f0f);
+  --tgui--divider: var(--tg-theme-section-separator-color, #213040);
   /** End of native tokens */
 
   /* Custom lib tokens */
   --tgui--skeleton: rgba(255, 255, 255, 0.03);
-  --tgui--divider: rgba(255, 255, 255, 0.05);
   --tgui--outline: rgba(255, 255, 255, 0.1);
-  --tgui--surface_primary: rgba(23, 23, 23, 0.95);
-  --tgui--tertiary_bg_color: #2a2a2a;
-  --tgui--quartenary_bg_color: #2f2f2f;
-  --tgui--segmented_control_active_bg: #2f2f2f;
-  --tgui--card_bg_color: #242424;
+  --tgui--brightness_filter: 1.2;
+  --tgui--glass_bg: rgba(255, 255, 255, 0.05);
+  --tgui--glass_tint: rgba(99, 99, 102, 0.12);
   --tgui--secondary_hint_color: #78797e;
   --tgui--secondary_fill: rgba(41, 144, 255, 0.15);
-  --tgui--green: #32e55e;
-  --tgui--destructive_background: rgba(255, 35, 35, 0.02);
-  --tgui--primary_code_highlight: #2990ff;
-  --tgui--secondary_code_highlight: #e937ed;
-  --tgui--tertiary_code_highlight: #5ae536;
   --tgui--plain_background: rgba(255, 255, 255, 0.08);
   --tgui--plain_foreground: rgba(255, 255, 255, 0.95);
   /* End of custom lib tokens */

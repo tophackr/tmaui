@@ -4,16 +4,16 @@
   border-radius: 8px;
 
   text-decoration: none;
-  transition: opacity .15s ease-out;
+  transition: opacity 0.15s ease-out;
   color: var(--tgui--hint_color);
 }
 
 .wrapper:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .wrapper:hover {
-    background: var(--tgui--tertiary_bg_color);
+    background: var(--tgui--glass_bg);
   }
 }

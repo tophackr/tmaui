@@ -7,7 +7,7 @@
 
 .element {
   position: relative;
-  color: var(--tgui--tertiary_bg_color);
+  color: var(--tgui--glass_bg);
 }
 
 .element:focus-visible {

@@ -9,7 +9,7 @@
 }
 
 .step--passed {
-  opacity: .35;
+  opacity: 0.35;
   background: var(--tgui--secondary_hint_color);
 }
 
@@ -18,7 +18,9 @@
   height: 20px;
 
   border-radius: 3px;
-  background: var(--tgui--tertiary_bg_color);
+  background: var(--tgui--glass_bg);
+  background-blend-mode: lighten;
+  backdrop-filter: blur(10px);
 }
 
 .step--ios.step--passed {

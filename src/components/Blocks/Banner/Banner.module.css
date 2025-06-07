@@ -25,7 +25,7 @@
 }
 
 .wrapper--withBackground .subheader {
-  opacity: .8;
+  opacity: 0.8;
   color: var(--tgui--white);
 }
 
@@ -42,7 +42,7 @@
 
 .wrapper--ios.wrapper--inline {
   margin: 8px 16px;
-  background: var(--tgui--quartenary_bg_color);
+  background: var(--tgui--glass_bg);
 }
 
 .background {

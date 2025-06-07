@@ -5,6 +5,9 @@
   align-items: center;
   gap: 24px;
   padding: 0 24px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: filter 0.3s ease;
 }
 
 .wrapper--ios {
@@ -12,7 +15,7 @@
 }
 
 .wrapper--hovered {
-  background: var(--tgui--tertiary_bg_color);
+  filter: brightness(var(--tgui--brightness_filter));
 }
 
 .before,
@@ -74,6 +77,6 @@
 
 @media (hover: hover) and (pointer: fine) {
   .wrapper:hover {
-    background: var(--tgui--tertiary_bg_color);
+    filter: brightness(var(--tgui--brightness_filter));
   }
 }
