@@ -67,8 +67,8 @@
   --tgui--skeleton: rgba(255, 255, 255, 0.03);
   --tgui--outline: rgba(0, 0, 0, 0.05);
   --tgui--brightness_filter: 0.96;
-  --tgui--glass_bg: rgba(0, 0, 0, 0.05);
-  --tgui--glass_tint: rgba(99, 99, 102, 0.06);
+  --tgui--glass_bg: rgba(0, 0, 0, 0.06);
+  --tgui--glass_tint: rgba(255, 255, 255, 0.75);
   --tgui--secondary_hint_color: #a2acb0;
   --tgui--secondary_fill: rgba(67, 120, 255, 0.1);
   --tgui--plain_background: rgba(0, 0, 0, 0.04);
@@ -133,8 +133,8 @@
   --tgui--skeleton: rgba(255, 255, 255, 0.03);
   --tgui--outline: rgba(255, 255, 255, 0.1);
   --tgui--brightness_filter: 1.2;
-  --tgui--glass_bg: rgba(255, 255, 255, 0.05);
-  --tgui--glass_tint: rgba(99, 99, 102, 0.12);
+  --tgui--glass_bg: rgba(255, 255, 255, 0.04);
+  --tgui--glass_tint: rgba(255, 255, 255, 0.21);
   --tgui--secondary_hint_color: #78797e;
   --tgui--secondary_fill: rgba(41, 144, 255, 0.15);
   --tgui--plain_background: rgba(255, 255, 255, 0.08);
