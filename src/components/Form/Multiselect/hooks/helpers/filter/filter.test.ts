@@ -1,3 +1,5 @@
+import { describe, expect, it } from 'vitest';
+
 import { defaultFilterFn } from './index'; // Adjust the import path as necessary
 
 describe('defaultFilterFn', () => {
