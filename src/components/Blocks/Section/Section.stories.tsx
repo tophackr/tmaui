@@ -2,12 +2,14 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Icon28Chat } from 'icons/28/chat';
 import { Icon28Devices } from 'icons/28/devices';
 import { Icon28Stats } from 'icons/28/stats';
+import { Language30 } from 'icons/pack/settings/30/Language30';
 import { setControlsTypes } from 'storybook/controls';
 
 import { Cell } from 'components/Blocks/Cell/Cell';
 import { IconContainer } from 'components/Blocks/IconContainer/IconContainer';
 import { List } from 'components/Blocks/List/List';
 import { Input } from 'components/Form/Input/Input';
+import { NavigationCell } from '../Cell/components/NavigationCell/NavigationCell';
 import { Section } from './Section';
 
 const meta = {
@@ -59,6 +61,12 @@ export const Playground: Story = {
             {cell.text}
           </Cell>
         ))}
+        <NavigationCell
+          icon={<Language30 color="mediumpurple" />}
+          after="English"
+        >
+          Language
+        </NavigationCell>
       </Section>
       <Section
         header="Personal Information"
