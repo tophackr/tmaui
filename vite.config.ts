@@ -6,9 +6,9 @@ import postcssGapProperties from 'postcss-gap-properties';
 import postcssImport from 'postcss-import';
 import postcssLogical from 'postcss-logical';
 import postcssModules from 'postcss-modules';
-import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from 'vitest/config';
 
 const __dirname = import.meta.dirname;
 
