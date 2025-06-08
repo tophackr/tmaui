@@ -96,7 +96,19 @@ jobs:
             A new prerelease is available for testing:
 
             ```sh
+            npm i tmaui@${{ env.BETA_PACKAGE_VERSION }}
+            ```
+
+            ```sh
+            yarn add tmaui@${{ env.BETA_PACKAGE_VERSION }}
+            ```
+
+            ```sh
             pnpm add tmaui@${{ env.BETA_PACKAGE_VERSION }}
+            ```
+
+            ```sh
+            bun add tmaui@${{ env.BETA_PACKAGE_VERSION }}
             ```
 
       - name: 'Remove the autorelease label once published'
