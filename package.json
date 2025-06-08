@@ -3,20 +3,23 @@
   "version": "2.1.11",
   "type": "module",
   "description": "World-class, ultimate UI developer toolkit.",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "typings": "./dist/types/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
   "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.cjs"
+    },
     "./styles.css": "./dist/styles.css",
     "./dist/styles.css": "./dist/styles.css"
   },
   "files": [
     "./dist"
   ],
-  "sideEffects": [
-    "./dist/esm/index.js",
-    "./dist/cjs/index.js"
-  ],
+  "sideEffects": false,
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=7.0.0"
@@ -26,7 +29,7 @@
     "prebuild": "pnpm run clean",
     "clean": "rimraf dist",
     "check": "turbo run test lint typecheck",
-    "test": "vitest run",
+    "test": "vitest --run",
     "lint": "eslint ./src --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "dev": "turbo run storybook css:types:dev --cache=local:r,remote:r",
@@ -94,6 +97,7 @@
     "eslint-plugin-unicorn": "^59.0.1",
     "file-loader": "^6.2.0",
     "globals": "^16.2.0",
+    "happy-dom": "^17.6.3",
     "jiti": "^2.4.2",
     "mini-css-extract-plugin": "^2.9.2",
     "postcss": "^8.5.4",

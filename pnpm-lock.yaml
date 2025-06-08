@@ -136,6 +136,9 @@ importers:
       globals:
         specifier: ^16.2.0
         version: 16.2.0
+      happy-dom:
+        specifier: ^17.6.3
+        version: 17.6.3
       jiti:
         specifier: ^2.4.2
         version: 2.4.2
@@ -213,7 +216,7 @@ importers:
         version: 5.1.4(typescript@5.8.3)(vite@6.3.5(@types/node@22.15.27)(jiti@2.4.2)(terser@5.40.0))
       vitest:
         specifier: ^3.2.2
-        version: 3.2.2(@types/node@22.15.27)(jiti@2.4.2)(terser@5.40.0)
+        version: 3.2.2(@types/node@22.15.27)(happy-dom@17.6.3)(jiti@2.4.2)(terser@5.40.0)
       webpack:
         specifier: ^5.99.9
         version: 5.99.9(@swc/core@1.11.29(@swc/helpers@0.5.17))(esbuild@0.18.20)(webpack-cli@6.0.1)
@@ -4734,6 +4737,10 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
 
+  happy-dom@17.6.3:
+    resolution: {integrity: sha512-UVIHeVhxmxedbWPCfgS55Jg2rDfwf2BCKeylcPSqazLz5w3Kri7Q4xdBJubsr/+VUzFLh0VjIvh13RaDA2/Xug==}
+    engines: {node: '>=20.0.0'}
+
   has-bigints@1.1.0:
     resolution: {integrity: sha512-R3pbpkcIqv2Pm3dUwgjclDRVmWpTJW2DcMzcIhEXEx1oh/CEMObMm3KLmRJOdvhM7o4uQBnwr8pzRK2sJWIqfg==}
     engines: {node: '>= 0.4'}
@@ -7362,6 +7369,10 @@ packages:
   webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
 
+  webidl-conversions@7.0.0:
+    resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
+    engines: {node: '>=12'}
+
   webpack-cli@6.0.1:
     resolution: {integrity: sha512-MfwFQ6SfwinsUVi0rNJm7rHZ31GyTcpVE5pgVA3hwFRb7COD4TzjUUwhGWKfO50+xdc2MQPuEBBJoqIMGt3JDw==}
     engines: {node: '>=18.12.0'}
@@ -7411,6 +7422,10 @@ packages:
     peerDependenciesMeta:
       webpack-cli:
         optional: true
+
+  whatwg-mimetype@3.0.0:
+    resolution: {integrity: sha512-nt+N2dzIutVRxARx1nghPKGv1xHikU7HKdfafKkLNLindmPU/ch3U31NOCGGA/dmPcmb1VlofO0vnKAcsm0o/Q==}
+    engines: {node: '>=12'}
 
   whatwg-url@5.0.0:
     resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
@@ -13125,6 +13140,11 @@ snapshots:
     optionalDependencies:
       uglify-js: 3.19.3
 
+  happy-dom@17.6.3:
+    dependencies:
+      webidl-conversions: 7.0.0
+      whatwg-mimetype: 3.0.0
+
   has-bigints@1.1.0: {}
 
   has-flag@4.0.0: {}
@@ -15741,7 +15761,7 @@ snapshots:
       jiti: 2.4.2
       terser: 5.40.0
 
-  vitest@3.2.2(@types/node@22.15.27)(jiti@2.4.2)(terser@5.40.0):
+  vitest@3.2.2(@types/node@22.15.27)(happy-dom@17.6.3)(jiti@2.4.2)(terser@5.40.0):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.2
@@ -15768,6 +15788,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.15.27
+      happy-dom: 17.6.3
     transitivePeerDependencies:
       - jiti
       - less
@@ -15798,6 +15819,8 @@ snapshots:
       defaults: 1.0.4
 
   webidl-conversions@3.0.1: {}
+
+  webidl-conversions@7.0.0: {}
 
   webpack-cli@6.0.1(webpack@5.99.9):
     dependencies:
@@ -15876,6 +15899,8 @@ snapshots:
       - '@swc/core'
       - esbuild
       - uglify-js
+
+  whatwg-mimetype@3.0.0: {}
 
   whatwg-url@5.0.0:
     dependencies:
