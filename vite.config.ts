@@ -18,20 +18,10 @@ export default defineConfig({
     react(),
     tsconfigPaths({ projects: ['./tsconfig.dist.json'] }),
     dts({
-      entryRoot: 'src',
-      insertTypesEntry: true,
       outDir: 'dist/types',
       tsconfigPath: './tsconfig.dist.json',
     }),
   ],
-  resolve: {
-    alias: {
-      components: path.resolve(__dirname, 'src/components'),
-      helpers: path.resolve(__dirname, 'src/helpers'),
-      hooks: path.resolve(__dirname, 'src/hooks'),
-      icons: path.resolve(__dirname, 'src/icons'),
-    },
-  },
   build: {
     target: 'es2022',
     sourcemap: true,
@@ -44,22 +34,7 @@ export default defineConfig({
       cssFileName: 'styles',
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
-      output: {
-        globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM',
-        },
-      },
-      onwarn(warning, warn) {
-        if (
-          warning.code === 'EMIT_CHUNK' &&
-          /.*\.module\.css$/.test(warning.id || '')
-        ) {
-          return;
-        }
-        warn(warning);
-      },
+      external: ['react', 'react/jsx-runtime', 'react-dom'],
     },
   },
   css: {
