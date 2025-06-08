@@ -5,7 +5,6 @@ import path from 'node:path';
 import postcssGapProperties from 'postcss-gap-properties';
 import postcssImport from 'postcss-import';
 import postcssLogical from 'postcss-logical';
-import postcssModules from 'postcss-modules';
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
@@ -46,10 +45,6 @@ export default defineConfig({
         postcssImport(),
         autoprefixer(),
         postcssLogical(),
-        postcssModules({
-          generateScopedName: 'tgui.[hash]',
-          getJSON: () => {},
-        }),
         postcssGapProperties(),
         cssnano({
           preset: [
