@@ -30,7 +30,7 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/index.ts'),
       formats: ['es', 'cjs'],
       fileName: 'index',
-      cssFileName: 'styles',
+      cssFileName: 'tmaui',
     },
     rollupOptions: {
       external: ['react', 'react/jsx-runtime', 'react-dom'],

@@ -49,7 +49,7 @@ bun add tmaui
 ## Usage
 
 ```jsx static
-import 'tmaui/dist/styles.css';
+import 'tmaui/tmaui.css';
 
 import { AppRoot, Placeholder } from 'tmaui';
 
