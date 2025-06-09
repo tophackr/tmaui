@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon20Copy } from 'icons/20/copy';
 import { Icon24PersonRemove } from 'icons/24/person_remove';
-import { hideControls, setControlsTypes } from 'storybook/controls';
+import { hideControls, setControlsTypes } from 'stories/controls';
 
 import { Button } from './Button';
 

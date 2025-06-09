@@ -1,8 +1,8 @@
 import type { MouseEvent } from 'react';
 import { useState } from 'react';
 
-import type { Meta, StoryObj } from '@storybook/react';
-import { hideControls } from 'storybook/controls';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { hideControls } from 'stories/controls';
 
 import { Placeholder } from 'components/Blocks/Placeholder/Placeholder';
 import { Touch } from 'components/Service/Touch/Touch';

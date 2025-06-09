@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon16Cancel } from 'icons/16/cancel';
-import { hideControls, setControlsTypes } from 'storybook/controls';
+import { hideControls, setControlsTypes } from 'stories/controls';
 
 import { Avatar } from 'components/Blocks/Avatar/Avatar';
 import { List } from 'components/Blocks/List/List';

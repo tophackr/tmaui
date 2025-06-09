@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon28Archive } from 'icons/28/archive';
-import { hideControls, setControlsTypes } from 'storybook/controls';
+import { hideControls, setControlsTypes } from 'stories/controls';
 
 import { Button } from 'components';
 import { Link } from 'components/Navigation/Link/Link';

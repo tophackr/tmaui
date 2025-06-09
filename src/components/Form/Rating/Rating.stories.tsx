@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon28Heart } from 'icons/28/heart';
-import { hideControls } from 'storybook/controls';
+import { hideControls } from 'stories/controls';
 
 import { List, Section } from 'components';
 import { Rating } from './Rating';

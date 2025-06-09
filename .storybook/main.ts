@@ -1,37 +1,21 @@
-import type { StorybookConfig } from '@storybook/react-webpack5';
-import path from 'path';
+import { createRequire } from 'node:module';
+import type { StorybookConfig } from '@storybook/react-vite';
+import path, { dirname, join } from 'path';
+
+const require = createRequire(import.meta.url);
+
+function getAbsolutePath(value: string): any {
+  return dirname(require.resolve(join(value, 'package.json')));
+}
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
-    '@storybook/addon-links',
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        actions: false,
-      },
-    },
+    getAbsolutePath('@storybook/addon-links'),
+    getAbsolutePath('@storybook/addon-docs'),
   ],
-  framework: {
-    name: '@storybook/react-webpack5',
-    options: {
-      fastRefresh: true,
-      builder: {
-        useSWC: true,
-      },
-    },
-  },
-  swc: () => ({
-    jsc: {
-      transform: {
-        react: {
-          runtime: 'automatic',
-        },
-      },
-    },
-  }),
+  framework: getAbsolutePath('@storybook/react-vite'),
   docs: {
-    autodocs: true,
     defaultName: 'Documentation',
   },
   typescript: {
@@ -52,27 +36,22 @@ const config: StorybookConfig = {
       },
     },
   },
-  webpackFinal: async (config) => {
-    if (!config.resolve) {
-      config.resolve = {};
-    }
-
-    if (!config.module) {
-      config.module = {};
-    }
-
-    if (!config.module.rules) {
-      config.module.rules = [];
-    }
-
-    config.resolve.modules = [
-      ...(config.resolve.modules || []),
-      path.resolve(__dirname, '../src'),
-    ];
-
-    return config;
+  viteFinal: async (config) => {
+    const { mergeConfig } = await import('vite');
+    return mergeConfig(config, {
+      resolve: {
+        alias: {
+          components: path.resolve(__dirname, '../src/components'),
+          stories: path.resolve(__dirname, '../src/stories'),
+          icons: path.resolve(__dirname, '../src/icons'),
+        },
+      },
+    });
   },
   staticDirs: ['./media'],
+  core: {
+    disableWhatsNewNotifications: true,
+  },
 };
 
 export default config;

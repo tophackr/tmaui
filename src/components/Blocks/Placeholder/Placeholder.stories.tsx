@@ -1,7 +1,7 @@
 import styles from './Placeholder.stories.module.css';
 
-import type { Meta, StoryObj } from '@storybook/react';
-import { hideControls, setControlsTypes } from 'storybook/controls';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { hideControls, setControlsTypes } from 'stories/controls';
 
 import { Button } from 'components';
 import { Placeholder } from './Placeholder';

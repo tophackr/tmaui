@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon28Stats } from 'icons/28/stats';
-import { hideControls, setControlsTypes } from 'storybook/controls';
+import { hideControls, setControlsTypes } from 'stories/controls';
 
 import { NavigationCell } from './NavigationCell';
 

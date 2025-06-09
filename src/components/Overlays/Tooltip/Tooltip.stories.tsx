@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 
-import type { Meta, StoryObj } from '@storybook/react';
-import { hideControls } from 'storybook/controls';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { hideControls } from 'stories/controls';
 
 import { Button } from 'components/Blocks/Button/Button';
 import { Tooltip } from './Tooltip';

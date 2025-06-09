@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import type { Decorator, Meta, StoryObj } from '@storybook/react';
+import type { Decorator, Meta, StoryObj } from '@storybook/react-vite';
 import { Icon28Close } from 'icons/28/close';
-import { hideControls } from 'storybook/controls';
+import { hideControls } from 'stories/controls';
 
 import { Button, Placeholder } from 'components';
 import type { ModalProps } from './Modal';

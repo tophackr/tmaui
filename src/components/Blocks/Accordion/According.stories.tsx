@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import type { Meta, StoryObj } from '@storybook/react';
-import { hideControls } from 'storybook/controls';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { hideControls } from 'stories/controls';
 
 import { Blockquote } from 'components/Blocks/Blockquote/Blockquote';
 import { Section } from 'components/Blocks/Section/Section';

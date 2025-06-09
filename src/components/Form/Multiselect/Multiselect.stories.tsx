@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import type { Decorator, Meta, StoryObj } from '@storybook/react';
-import { hideControls, setControlsTypes } from 'storybook/controls';
+import type { Decorator, Meta, StoryObj } from '@storybook/react-vite';
+import { hideControls, setControlsTypes } from 'stories/controls';
 
 import { Section } from 'components';
 import { List } from 'components/Blocks/List/List';
