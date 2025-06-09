@@ -25,6 +25,7 @@ export const Playground: Story = {
     before: <Icon28Archive />,
     description: 'Restore the message within 4 seconds',
     children: 'Message deleted',
+    onClose: () => {},
   },
   render: (args) => {
     const [isDeleteSnackbarShown, setIsDeleteSnackbarShown] = useState(false);
