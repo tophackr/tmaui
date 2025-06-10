@@ -11,6 +11,8 @@ import { SegmentedControlItem } from './components/SegmentedControlItem/Segmente
 export interface SegmentedControlProps extends HTMLAttributes<HTMLDivElement> {
   /** Children should be SegmentedControl.Item components to render within the control. */
   children: ReactElement<SegmentedControlItemProps>[];
+  /** Sets the size of the segments to full width */
+  fullWidth?: boolean;
 }
 
 /**
@@ -21,6 +23,7 @@ export interface SegmentedControlProps extends HTMLAttributes<HTMLDivElement> {
 export const SegmentedControl = ({
   className,
   children,
+  fullWidth = false,
   ...restProps
 }: SegmentedControlProps) => {
   const platform = usePlatform();
@@ -39,6 +42,7 @@ export const SegmentedControl = ({
       className={classNames(
         styles.wrapper,
         platform === 'ios' && styles['wrapper--ios'],
+        fullWidth && styles['wrapper--fullWidth'],
         className
       )}
       {...restProps}
