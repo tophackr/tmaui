@@ -1,5 +1,11 @@
 # tmaui
 
+## 2.2.2
+
+### Patch Changes
+
+- [`ff85526`](https://github.com/tophackr/tmaui/commit/ff855264b8aab9e8d19179cbaa9216dd222ef0b2) Thanks [@tophackr](https://github.com/tophackr)! - return back border width for media min-resolution
+
 ## 2.2.1
 
 ### Patch Changes
