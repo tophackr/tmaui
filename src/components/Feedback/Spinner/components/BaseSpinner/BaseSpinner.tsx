@@ -3,7 +3,7 @@ import { IconLarge } from './icons/large';
 import { IconMedium } from './icons/medium';
 import { IconSmall } from './icons/small';
 
-interface BaseSpinnerProps {
+export interface BaseSpinnerProps {
   size: SpinnerProps['size'];
 }
 

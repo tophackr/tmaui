@@ -1,5 +1,9 @@
+export type { ModalCloseProps } from './Modal/components/ModalClose/ModalClose';
+export type { ModalHeaderProps } from './Modal/components/ModalHeader/ModalHeader';
+export type { ModalOverlayProps } from './Modal/components/ModalOverlay/ModalOverlay';
 export type { ModalProps } from './Modal/Modal';
 export { Modal } from './Modal/Modal';
+export type { FloatingArrowProps } from './Popper/components/FloatingArrow/FloatingArrow';
 export type { PopperProps } from './Popper/Popper';
 export { Popper } from './Popper/Popper';
 export type { TooltipProps } from './Tooltip/Tooltip';

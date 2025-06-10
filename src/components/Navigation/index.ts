@@ -1,12 +1,16 @@
 export type { BreadcrumbsProps } from './Breadcrumbs/Breadcrumbs';
 export { Breadcrumbs } from './Breadcrumbs/Breadcrumbs';
+export type { BreadCrumbsItemProps } from './Breadcrumbs/components/BreadCrumbsItem/BreadCrumbsItem';
 export type { CompactPaginationProps } from './CompactPagination/CompactPagination';
 export { CompactPagination } from './CompactPagination/CompactPagination';
+export type { CompactPaginationItemProps } from './CompactPagination/components/CompactPaginationItem/CompactPaginationItem';
 export type { LinkProps } from './Link/Link';
 export { Link } from './Link/Link';
 export type { PaginationProps } from './Pagination/Pagination';
 export { Pagination } from './Pagination/Pagination';
+export type { SegmentedControlItemProps } from './SegmentedControl/components/SegmentedControlItem/SegmentedControlItem';
 export type { SegmentedControlProps } from './SegmentedControl/SegmentedControl';
 export { SegmentedControl } from './SegmentedControl/SegmentedControl';
+export type { TabsItemProps } from './TabsList/components/TabsItem/TabsItem';
 export type { TabsListProps } from './TabsList/TabsList';
 export { TabsList } from './TabsList/TabsList';

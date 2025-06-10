@@ -6,7 +6,9 @@ import { Caption } from 'components/Typography/Caption/Caption';
 import { Subheadline } from 'components/Typography/Subheadline/Subheadline';
 import type { TypographyProps } from 'components/Typography/Typography';
 
-export const FormInputTitle = ({ ...restProps }: TypographyProps) => {
+export type FormInputTitleProps = TypographyProps;
+
+export const FormInputTitle = ({ ...restProps }: FormInputTitleProps) => {
   const platform = usePlatform();
 
   if (platform === 'ios') {

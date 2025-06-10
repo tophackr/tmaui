@@ -3,7 +3,7 @@ import { IconLarge } from './icons/large';
 import { IconMedium } from './icons/medium';
 import { IconSmall } from './icons/small';
 
-interface IOSSpinnerProps {
+export interface IOSSpinnerProps {
   size: SpinnerProps['size'];
 }
 

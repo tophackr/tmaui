@@ -8,7 +8,7 @@ import type { CellProps } from 'components/Blocks/Cell/Cell';
 import { Cell } from 'components/Blocks/Cell/Cell';
 import { CardContext } from '../../CardContext';
 
-type CardCellProps = CellProps;
+export type CardCellProps = CellProps;
 
 export const CardCell = ({
   children,
