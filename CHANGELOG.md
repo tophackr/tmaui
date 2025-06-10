@@ -1,5 +1,11 @@
 # tmaui
 
+## 2.2.1
+
+### Patch Changes
+
+- [`c0ff295`](https://github.com/tophackr/tmaui/commit/c0ff295875927a6f02aea4dbf256d08dc130ce8d) Thanks [@tophackr](https://github.com/tophackr)! - reexport sub component props
+
 ## 2.2.0
 
 ### Minor Changes
