@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Icon28Chat, Icon28Devices, Icon28Stats } from 'icons';
-import { Language30 } from 'icons/pack';
 import { hideControls } from 'stories/controls';
 
 import {
@@ -15,6 +13,10 @@ import {
 import { Input } from 'components/Form';
 import type { SegmentedControlProps } from './SegmentedControl';
 import { SegmentedControl } from './SegmentedControl';
+import { Icon28Chat } from 'icons/28/chat';
+import { Icon28Devices } from 'icons/28/devices';
+import { Icon28Stats } from 'icons/28/stats';
+import { Language30 } from 'icons/pack/settings/30/Language30';
 
 const meta = {
   title: 'Navigation/SegmentedControl',
