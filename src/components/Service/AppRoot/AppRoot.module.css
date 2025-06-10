@@ -142,6 +142,12 @@
   /* End of custom lib tokens */
 }
 
+@media (min-resolution: 2dppx) {
+  .wrapper {
+    --tgui--border--width: 0.5px;
+  }
+}
+
 @supports (padding-top: constant(safe-area-inset-bottom)) {
   .wrapper {
     --tgui--safe_area_inset_bottom: constant(safe-area-inset-bottom);
