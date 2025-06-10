@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Placeholder } from 'components';
 import { Cell } from 'components/Blocks/Cell/Cell';

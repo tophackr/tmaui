@@ -1,9 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon28Chat } from 'icons/28/chat';
 import { Icon28Devices } from 'icons/28/devices';
 import { Icon28Stats } from 'icons/28/stats';
 import { Language30 } from 'icons/pack/settings/30/Language30';
-import { setControlsTypes } from 'storybook/controls';
+import { setControlsTypes } from 'stories/controls';
 
 import { Cell } from 'components/Blocks/Cell/Cell';
 import { IconContainer } from 'components/Blocks/IconContainer/IconContainer';

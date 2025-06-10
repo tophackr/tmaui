@@ -1,8 +1,15 @@
-import type { Preview } from '@storybook/react';
+import type { Preview } from '@storybook/react-vite';
 import { AppearanceDecorator } from './decorators/appearance';
 import { AppRootDecorator } from './decorators/root';
 import { StrictDecorator } from './decorators/strict';
-import { Controls, Description, Primary, Stories, Subtitle, Title } from '@storybook/blocks';
+import {
+  Controls,
+  Description,
+  Primary,
+  Stories,
+  Subtitle,
+  Title,
+} from '@storybook/addon-docs/blocks';
 
 const preview: Preview = {
   parameters: {
@@ -56,11 +63,8 @@ const preview: Preview = {
       },
     },
   },
-  decorators: [
-    StrictDecorator,
-    AppRootDecorator,
-    AppearanceDecorator,
-  ],
+  decorators: [StrictDecorator, AppRootDecorator, AppearanceDecorator],
+  tags: ['autodocs'],
 };
 
 export default preview;

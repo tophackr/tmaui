@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Placeholder } from 'components';
 import type { ModalCloseProps } from './ModalClose';

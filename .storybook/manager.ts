@@ -1,7 +1,7 @@
-import { create } from '@storybook/theming';
+import { create } from 'storybook/theming';
 import logo from './media/logo.png';
 
-import { addons } from '@storybook/manager-api';
+import { addons } from 'storybook/manager-api';
 
 const favicon = document.querySelector('link[rel="icon"]');
 if (favicon) {
@@ -12,7 +12,7 @@ if (favicon) {
 addons.setConfig({
   theme: create({
     base: 'light',
-    brandTitle: `<img alt="Logo" src="${logo}" width="32px" height="32px"/>`
+    brandTitle: `<img alt="Logo" src="${logo}" width="32px" height="32px"/>`,
   }),
   toolbar: {
     zoom: { hidden: true },

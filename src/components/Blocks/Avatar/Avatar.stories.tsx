@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon12Quote } from 'icons/12/quote';
 import { Icon28Stats } from 'icons/28/stats';
-import { hideControls } from 'storybook/controls';
+import { hideControls } from 'stories/controls';
 
 import { Avatar } from './Avatar';
 

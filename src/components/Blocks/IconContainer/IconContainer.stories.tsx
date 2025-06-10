@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon28Chat } from 'icons/28/chat';
 import { Icon28Devices } from 'icons/28/devices';
 import { Icon28Stats } from 'icons/28/stats';

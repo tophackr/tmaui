@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { hideControls, setControlsTypes } from 'storybook/controls';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { hideControls, setControlsTypes } from 'stories/controls';
 
 import { Avatar } from 'components/Blocks/Avatar/Avatar';
 import { Badge } from 'components/Blocks/Badge/Badge';

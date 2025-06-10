@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon24Chat } from 'icons/24/chat';
 import { Icon24Notifications } from 'icons/24/notifications';
 import { Icon24QR } from 'icons/24/qr';
-import { hideControls } from 'storybook/controls';
+import { hideControls } from 'stories/controls';
 
 import { InlineButtons } from './InlineButtons';
 

@@ -1,5 +1,5 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { setControlsTypes } from 'storybook/controls';
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { setControlsTypes } from 'stories/controls';
 
 import { SectionFooter } from './SectionFooter';
 

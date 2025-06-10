@@ -20,7 +20,6 @@ export interface SegmentedControlItemProps
  * It leverages the Tappable component for handling interactions and supports platform-specific styles.
  */
 export const SegmentedControlItem = ({
-  selected,
   className,
   children,
   ...restProps
@@ -37,7 +36,7 @@ export const SegmentedControlItem = ({
       )}
       {...restProps}
     >
-      <Caption weight={selected ? '2' : '3'}>{children}</Caption>
+      <Caption weight={'2'}>{children}</Caption>
     </Tappable>
   );
 };

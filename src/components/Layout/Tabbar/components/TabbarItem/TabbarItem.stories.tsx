@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Icon28Devices } from 'icons/28/devices';
-import { hideControls } from 'storybook/controls';
+import { hideControls } from 'stories/controls';
 
 import type { TabbarItemProps } from './TabbarItem';
 import { TabbarItem } from './TabbarItem';

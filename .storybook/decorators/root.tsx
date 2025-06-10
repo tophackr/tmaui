@@ -1,5 +1,5 @@
 import { AppRoot } from 'components';
-import { Decorator } from '@storybook/react';
+import { Decorator } from '@storybook/react-vite';
 
 export const AppRootDecorator: Decorator = (Story, context) => (
   <AppRoot
