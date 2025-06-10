@@ -1,9 +1,34 @@
 import { Meta, IconGallery, IconItem } from '@storybook/addon-docs/blocks';
 
-import * as icons from './icons';
+import * as icons from './icons/index';
 import * as iconPack from './icons/pack';
 
 # UI Icons
+
+All icons are imported from the `tmaui/icons` package. They are React components and can be used as regular components.
+
+## How to use
+
+```tsx
+import { Icon24Notifications, Icon28Chat } from 'tmaui/icons';
+
+function Page() {
+  return (
+    <div>
+      <Icon24Notifications />
+      <Icon28Chat />
+    </div>
+  );
+}
+```
+
+Можно задавать размер через props:
+
+```tsx
+<Icon24Notifications size={32} />
+```
+
+The icon components support standard SVG props.
 
 <IconGallery
   style={{
@@ -18,6 +43,19 @@ import * as iconPack from './icons/pack';
 </IconGallery>
 
 # Icon Pack
+
+A set of additional icons used in the package. They can be used in the same way as UI icons.
+In these components, you can additionally set the color props.
+
+```tsx
+import { Account30, ArrowDown28 } from 'tmaui/icons';
+
+<Account30 color="#abc" />
+<ArrowDown28
+  size={40}
+  color="blue"
+/>
+```
 
 <IconGallery
   style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(256px, 1fr))' }}
