@@ -13,6 +13,12 @@
       "require": "./dist/index.cjs",
       "default": "./dist/index.cjs"
     },
+    "./icons": {
+      "types": "./dist/types/icons.d.ts",
+      "import": "./dist/icons.js",
+      "require": "./dist/icons.cjs",
+      "default": "./dist/icons.cjs"
+    },
     "./tmaui.css": "./dist/tmaui.css",
     "./dist/styles.css": "./dist/tmaui.css"
   },

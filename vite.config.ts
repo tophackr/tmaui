@@ -27,9 +27,11 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     lib: {
-      entry: path.resolve(__dirname, 'src/index.ts'),
+      entry: [
+        path.resolve(__dirname, 'src/index.ts'),
+        path.resolve(__dirname, 'src/icons.ts'),
+      ],
       formats: ['es', 'cjs'],
-      fileName: 'index',
       cssFileName: 'tmaui',
     },
     rollupOptions: {
