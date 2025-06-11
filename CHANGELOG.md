@@ -1,5 +1,11 @@
 # tmaui
 
+## 2.2.3
+
+### Patch Changes
+
+- [`1201a8d`](https://github.com/tophackr/tmaui/commit/1201a8da02940278fad584a40b39a94613a023e4) Thanks [@tophackr](https://github.com/tophackr)! - update select size
+
 ## 2.2.2
 
 ### Patch Changes
