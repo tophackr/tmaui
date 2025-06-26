@@ -11,6 +11,7 @@
 
 .wrapper--fullWidth {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .body {
@@ -35,7 +36,6 @@
   border-radius: 40px;
   transition: transform 150ms ease;
   width: 100%;
-  grid-column: span 1;
 }
 
 .wrapper--ios {
