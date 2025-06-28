@@ -1,5 +1,11 @@
 # tmaui
 
+## 2.2.4
+
+### Patch Changes
+
+- [`3d6cb48`](https://github.com/tophackr/tmaui/commit/3d6cb48cfeeeb24cfe45971f5c24f85b5ef7f681) Thanks [@tophackr](https://github.com/tophackr)! - fix segment control #14
+
 ## 2.2.3
 
 ### Patch Changes
