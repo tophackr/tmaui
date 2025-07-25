@@ -36,6 +36,14 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['react', 'react/jsx-runtime', 'react-dom'],
+      output: {
+        manualChunks(id) {
+          if (id.includes('src/icons')) {
+            return 'icons';
+          }
+          return;
+        },
+      },
     },
   },
   css: {

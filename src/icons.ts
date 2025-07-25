@@ -1,2 +1,2 @@
-export * from './icons';
+export * from './icons/index';
 export * from './icons/pack';
