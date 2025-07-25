@@ -1,5 +1,11 @@
 # tmaui
 
+## 2.2.5
+
+### Patch Changes
+
+- [`9b42a86`](https://github.com/tophackr/tmaui/commit/9b42a861505c1d873f90297b3c70c76bea3f3f3b) Thanks [@tophackr](https://github.com/tophackr)! - update ui icons export to bundle
+
 ## 2.2.4
 
 ### Patch Changes
